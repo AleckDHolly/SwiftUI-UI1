@@ -60,6 +60,12 @@ struct Card: View {
         .clipShape(CustomShape())
         .frame(height: 300)
         .frame(maxWidth: .infinity)
+        .shadow(color: .gray, radius: 20, x: 5, y: 5)
+        .overlay {
+            CustomShape()
+                .stroke(.white, lineWidth: 3)
+        }
+        
         .padding(.horizontal)
     }
 }
