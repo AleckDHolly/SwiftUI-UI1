@@ -9,7 +9,29 @@ import SwiftUI
 
 struct TopElements: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(.person)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 75, height: 75)
+                .clipShape(.circle)
+                .overlay {
+                    Circle().stroke(LinearGradient(colors: [.cyan, .white], startPoint: .top, endPoint: .bottom), lineWidth: 4)
+                }
+            
+            Spacer()
+            
+            Image(systemName: "magnifyingglass")
+                .frame(width: 75, height: 75)
+                .background(.ultraThinMaterial)
+                .clipShape(.circle)
+            
+            Image(systemName: "hexagon")
+                .frame(width: 75, height: 75)
+                .background(.ultraThinMaterial)
+                .clipShape(.circle)
+        }
+        .padding()
     }
 }
 

@@ -9,7 +9,21 @@ import SwiftUI
 
 struct Title: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Explore and discover")
+                .multilineTextAlignment(.center)
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+            Text("exclusive NFTs")
+                .multilineTextAlignment(.center)
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .foregroundStyle(LinearGradient(
+                    colors: [.primary, .cyan],
+                    startPoint: .leading,
+                    endPoint: .trailing))
+        }
+        .padding()
     }
 }
 
