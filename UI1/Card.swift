@@ -18,8 +18,7 @@ struct Card: View {
                 .frame(height: 300)
                 .frame(maxWidth: .infinity)
                 .clipped()
-                
-                
+                .contentShape(CustomShape())
             
             HStack {
                 Image(systemName: "hexagon")
