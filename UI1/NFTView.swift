@@ -79,7 +79,7 @@ struct NFTView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.ultraThinMaterial.opacity(0.6))
+        .background(.ultraThinMaterial.opacity(0.1))
         .background(Image(image)
             .resizable()
             .ignoresSafeArea()

@@ -58,15 +58,14 @@ struct Card: View {
             .background(.ultraThickMaterial)
         }
         .clipShape(CustomShape())
+        .shadow(color: .gray, radius: 5, x: 5, y: 5)
         .frame(height: 300)
         .frame(maxWidth: .infinity)
-        .shadow(color: .gray, radius: 20, x: 5, y: 5)
         .overlay {
             CustomShape()
                 .stroke(.white, lineWidth: 3)
         }
-        
-        .padding(.horizontal)
+        .padding()
     }
 }
 
