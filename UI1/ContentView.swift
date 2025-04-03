@@ -31,6 +31,7 @@ struct ContentView: View {
                             Card(image: images[index])
                                 .matchedTransitionSource(id: "zoom\(index)", in: namespace)
                         }
+                        .buttonStyle(.plain)
                     }
                 }
             }
